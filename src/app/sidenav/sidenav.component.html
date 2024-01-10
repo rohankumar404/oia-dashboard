@@ -1,1 +1,156 @@
-<p>sidenav works!</p>
+<mat-sidenav-container class="example-container h-full bg-white" autosize>
+	<mat-sidenav #sidenav class="example-sidenav" mode="side" opened="true" (mouseenter)="mouseenter()" (mouseleave)="mouseleave()">
+		<mat-nav-list class="bg-teal-600 h-full">
+			<mat-list-item (click)="showSubmenu = !showSubmenu" class="items-center hover:bg-teal-500">
+                <mat-icon class="text-white" mat-list-icon>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dashboard w-full h-full" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M12 13m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                        <path d="M13.45 11.55l2.05 -2.05" />
+                        <path d="M6.4 20a9 9 0 1 1 11.2 0z" />
+                      </svg>
+                </mat-icon>
+				<span class="full-width text-white pl-2 text-lg" *ngIf="isExpanded || isShowing">Dashboard</span>
+			</mat-list-item>
+            <mat-list-item (click)="showSubmenu = !showSubmenu" class="items-center hover:bg-teal-500">
+                <mat-icon class="text-white" mat-list-icon>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users" width="23" height="23" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+                        <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                        <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
+                      </svg>
+                </mat-icon>
+				<span class="full-width text-white pl-2 text-lg" *ngIf="isExpanded || isShowing">Enterprise Admin</span>
+			</mat-list-item>
+            <mat-list-item (click)="showSubmenu = !showSubmenu" class="items-center hover:bg-teal-500">
+                <mat-icon class="text-white" mat-list-icon>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-apps" width="26" height="26" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M4 4m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" />
+                        <path d="M4 14m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" />
+                        <path d="M14 14m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" />
+                        <path d="M14 7l6 0" />
+                        <path d="M17 4l0 6" />
+                    </svg>
+                </mat-icon>
+				<span class="full-width text-white pl-2 text-lg" *ngIf="isExpanded || isShowing">Stakeholer Management</span>
+			</mat-list-item>
+            <mat-list-item (click)="showSubmenu = !showSubmenu" class="items-center hover:bg-teal-500">
+                <mat-icon class="text-white" mat-list-icon>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chart-dots" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 3v18h18" />
+                        <path d="M9 9m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                        <path d="M19 7m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                        <path d="M14 15m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                        <path d="M10.16 10.62l2.34 2.88" />
+                        <path d="M15.088 13.328l2.837 -4.586" />
+                    </svg>
+                </mat-icon>
+				<span class="full-width text-white pl-2 text-lg" *ngIf="isExpanded || isShowing">lCV Management</span>
+			</mat-list-item>
+            <mat-list-item (click)="showSubmenu = !showSubmenu" class="items-center hover:bg-teal-500">
+                <mat-icon class="text-white" mat-list-icon>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sitemap" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 15m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v2a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z" />
+                        <path d="M15 15m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v2a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z" />
+                        <path d="M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v2a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z" />
+                        <path d="M6 15v-1a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v1" />
+                        <path d="M12 9l0 3" />
+                    </svg>
+                </mat-icon>
+				<span class="full-width text-white pl-2 text-lg" *ngIf="isExpanded || isShowing">Profile Management</span>
+			</mat-list-item>
+            <mat-list-item (click)="showSubmenu = !showSubmenu" class="items-center hover:bg-teal-500">
+                <mat-icon class="text-white" mat-list-icon>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-flipboard" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3.973 3h16.054c.537 0 .973 .436 .973 .973v4.052a.973 .973 0 0 1 -.973 .973h-5.025v4.831c0 .648 -.525 1.173 -1.173 1.173h-4.829v5.025a.973 .973 0 0 1 -.974 .973h-4.053a.973 .973 0 0 1 -.973 -.973v-16.054c0 -.537 .436 -.973 .973 -.973z" />
+                    </svg>
+                </mat-icon>
+				<span class="full-width text-white pl-2 text-lg" *ngIf="isExpanded || isShowing">OIA ICV Zone</span>
+			</mat-list-item>
+            <mat-list-item (click)="showSubmenu = !showSubmenu" class="items-center hover:bg-teal-500">
+                <mat-icon class="text-white" mat-list-icon>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-settings-cog" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M12.003 21c-.732 .001 -1.465 -.438 -1.678 -1.317a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c.886 .215 1.325 .957 1.318 1.694" />
+                        <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                        <path d="M19.001 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                        <path d="M19.001 15.5v1.5" />
+                        <path d="M19.001 21v1.5" />
+                        <path d="M22.032 17.25l-1.299 .75" />
+                        <path d="M17.27 20l-1.3 .75" />
+                        <path d="M15.97 17.25l1.3 .75" />
+                        <path d="M20.733 20l1.3 .75" />
+                    </svg>
+                </mat-icon>
+				<span class="full-width text-white pl-2 text-lg" *ngIf="isExpanded || isShowing">Master Configuration</span>
+			</mat-list-item>
+            <mat-list-item (click)="showSubmenu = !showSubmenu" class="items-center hover:bg-teal-500">
+                <mat-icon class="text-white" mat-list-icon>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-table-options" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M12 21h-7a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v7" />
+                        <path d="M3 10h18" />
+                        <path d="M10 3v18" />
+                        <path d="M19.001 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                        <path d="M19.001 15.5v1.5" />
+                        <path d="M19.001 21v1.5" />
+                        <path d="M22.032 17.25l-1.299 .75" />
+                        <path d="M17.27 20l-1.3 .75" />
+                        <path d="M15.97 17.25l1.3 .75" />
+                        <path d="M20.733 20l1.3 .75" />
+                    </svg>
+                </mat-icon>
+				<span class="full-width text-white pl-2 text-lg" *ngIf="isExpanded || isShowing">Contant Management</span>
+			</mat-list-item>
+            <mat-list-item (click)="showSubmenu = !showSubmenu" class="items-center hover:bg-teal-500">
+                <mat-icon class="text-white" mat-list-icon>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-barcode" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                        <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+                        <path d="M8 13h1v3h-1z" />
+                        <path d="M12 13v3" />
+                        <path d="M15 13h1v3h-1z" />
+                    </svg>
+                </mat-icon>
+				<span class="full-width text-white pl-2 text-lg" *ngIf="isExpanded || isShowing">Reports & Analytics</span>
+			</mat-list-item>
+            <mat-list-item (click)="showSubmenu = !showSubmenu" class="items-center hover:bg-teal-500">
+                <mat-icon class="text-white" mat-list-icon>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-24-hours" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M4 13c.325 2.532 1.881 4.781 4 6" />
+                        <path d="M20 11a8.1 8.1 0 0 0 -15.5 -2" />
+                        <path d="M4 5v4h4" />
+                        <path d="M12 15h2a1 1 0 0 1 1 1v1a1 1 0 0 1 -1 1h-1a1 1 0 0 0 -1 1v1a1 1 0 0 0 1 1h2" />
+                        <path d="M18 15v2a1 1 0 0 0 1 1h1" />
+                        <path d="M21 15v6" />
+                    </svg>
+                </mat-icon>
+				<span class="full-width text-white pl-2 text-lg" *ngIf="isExpanded || isShowing">Support (Tickets)</span>
+			</mat-list-item>
+            <mat-list-item (click)="showSubmenu = !showSubmenu" class="items-center hover:bg-teal-500">
+                <mat-icon class="text-white" mat-list-icon>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-address-book" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M20 6v12a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2z" />
+                        <path d="M10 16h6" />
+                        <path d="M13 11m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                        <path d="M4 8h3" />
+                        <path d="M4 12h3" />
+                        <path d="M4 16h3" />
+                    </svg>
+                </mat-icon>
+				<span class="full-width text-white pl-2 text-lg" *ngIf="isExpanded || isShowing">Contact Us</span>
+			</mat-list-item>
+		</mat-nav-list>
+	</mat-sidenav>
+    <div class="example-sidenav-content">
+	</div>
+</mat-sidenav-container>

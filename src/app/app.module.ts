@@ -7,6 +7,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { HeaderComponent } from './header/header.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+import {MatListModule} from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -19,6 +23,10 @@ import { SidenavComponent } from './sidenav/sidenav.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
+    MatSidenavModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatListModule
 
   ],
   providers: [],

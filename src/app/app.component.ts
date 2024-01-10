@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'oia-dashboard';
+  isSidenavExpanded = true;
+
+  toggleSidenav() {
+    this.isSidenavExpanded = !this.isSidenavExpanded;
+  }
 }
