@@ -151,6 +151,465 @@
 			</mat-list-item>
 		</mat-nav-list>
 	</mat-sidenav>
-    <div class="example-sidenav-content">
-	</div>
+    <div class="container w-full py-2 px-4 bg-white">
+       <div class="top-notification">
+        <div class="text text-end text-red-500 flex">
+            <p class="text-sm m-0 w-full">All Currency values are in</p><span class="text-red-500 font-semibold text-sm pl-1 pr-1">OMR</span>
+        </div>
+       </div>
+       <div class="page-head w-full flex justify-between mt-3">
+            <div class="left-contant">
+                <p class="font-extrabold text-2xl">OIA Qimam Dashboard - Q2, 2023</p>
+            </div>
+            <div class="right-contant-items flex">
+                <div class="item1">
+                    <select name="profile" id="profile" class="bg-buttur p-1 px-2 rounded-xl">
+                        <option value="OMR">OMR</option>
+                        <option value="OIA">OIA</option>
+                    </select>
+                </div>
+                <div class="item2 mx-2">
+                    <select name="year" id="year" class="bg-buttur p-1 px-2 rounded-xl">
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                    </select>
+                </div>
+                <div class="item3">
+                    <select name="Querter" id="Querter" class="bg-buttur p-1 px-2 rounded-xl">
+                        <option value="Querter1">Querter1</option>
+                        <option value="Querter2">Querter2</option>
+                        <option value="Querter3">Querter2</option>
+                        <option value="Querter4">Querter3</option>
+                    </select>
+                </div>
+            </div>
+       </div>
+       <div class="score-board w-full flex justify-between">
+            <div class="holding-ctagories w-2/5 p-3 bg-teal-600 flex justify-between rounded-md shadow-myshadow shadow-teal-500">
+                <div class="score text-white">
+                    <p class="text-xl">Holding</p>
+                    <p class="m-0 text-3xl font-semibold">12</p>
+                </div>
+                <div class="score text-white">
+                    <p class="text-xl">Subsidiaries</p>
+                    <p class="m-0 text-3xl font-semibold">160</p>
+                </div>
+                <div class="score text-white">
+                    <p class="text-xl">Constractors</p>
+                    <p class="m-0 text-3xl font-semibold">1235</p>
+                </div>
+            </div>
+            <div class="consolidated-spend-value w-mywidth p-3 shadow-myshadow shadow-slate-300 rounded-md">
+                <p class="text-center text-xl text-teal-600 m-0">Consolidated Spend Value</p>
+                <div class="vailu-score flex w-full justify-center">
+                    <p class="m-0 text-3xl font-semibold text-center">300.51</p>
+                    <p class="text-lg font-semibold text-slate-500 m-0 mt-1 pl-2">MIn</p>
+                </div>
+            </div>
+            <div class="consolidated-retained-value w-mywidth p-3 bg-teal-100 border-1 border-teal-600 rounded-md shadow-myshadow shadow-teal-300">
+                <p class="text-center text-xl text-teal-600 m-0">Consolidated Retained Vaiue</p>
+                <div class="vailu-score flex w-full justify-center">
+                    <p class="m-0 text-3xl font-semibold text-center">200.36</p>
+                    <p class="text-lg font-semibold text-slate-500 m-0 mt-1 pl-2 pr-2">MIn</p>
+                    <p class="px-2 py-1 m-0 bg-teal-600 text-white text-lg rounded-md">66.67%</p>
+                </div>
+            </div>
+       </div>
+       <div class="min-score-board w-full rounded-md shadow-myshadow shadow-slate-300 p-3 mt-4 justify-between flex">
+            <div class="oia-corporate-diract w-1/3 flex border-r-2 border-slate-300">
+                <div class="spend">
+                    <p class=" text-md text-teal-600 m-0">OIA Corporate Direct Spend</p>
+                    <div class="vailu-score flex w-full">
+                    <p class="m-0 text-xl font-semibold">300.51</p>
+                    <p class="text-md font-semibold text-slate-500 m-0 pl-2">MIn</p>
+                </div>
+                </div>
+                <div class="value ml-5">
+                    <p class="text-md text-teal-600 m-0">Retained Vaiue</p>
+                    <div class="vailu-score flex w-full">
+                        <p class="m-0 text-xl font-semibold">200.36</p>
+                        <p class="text-md font-semibold text-slate-500 m-0 pl-2 pr-2">MIn</p>
+                        <p class="px-2 py-1 m-0 bg-teal-600 text-white text-md rounded-md">66.67%</p>
+                    </div>
+                </div>
+            </div>
+            <div class="oia-corporate-diract w-1/3 flex border-r-2 border-slate-300">
+                <div class="spend">
+                    <p class=" text-md text-teal-600 m-0">OIA Corporate Direct Spend</p>
+                    <div class="vailu-score flex w-full">
+                    <p class="m-0 text-xl font-semibold">300.51</p>
+                    <p class="text-md font-semibold text-slate-500 m-0 pl-2">MIn</p>
+                </div>
+                </div>
+                <div class="value ml-5">
+                    <p class="text-md text-teal-600 m-0">Retained Vaiue</p>
+                    <div class="vailu-score flex w-full">
+                        <p class="m-0 text-xl font-semibold">200.36</p>
+                        <p class="text-md font-semibold text-slate-500 m-0 pl-2 pr-2">MIn</p>
+                        <p class="px-2 py-1 m-0 bg-teal-600 text-white text-md rounded-md">66.67%</p>
+                    </div>
+                </div>
+            </div>
+            <div class="oia-corporate-diract flex">
+                <div class="spend">
+                    <p class=" text-md text-teal-600 m-0">OIA Corporate Direct Spend</p>
+                    <div class="vailu-score flex w-full">
+                    <p class="m-0 text-xl font-semibold">300.51</p>
+                    <p class="text-md font-semibold text-slate-500 m-0 pl-2">MIn</p>
+                </div>
+                </div>
+                <div class="value ml-5">
+                    <p class="text-md text-teal-600 m-0">Retained Vaiue</p>
+                    <div class="vailu-score flex w-full">
+                        <p class="m-0 text-xl font-semibold">200.36</p>
+                        <p class="text-md font-semibold text-slate-500 m-0 pl-2 pr-2">MIn</p>
+                        <p class="px-2 py-1 m-0 bg-teal-600 text-white text-md rounded-md">66.67%</p>
+                    </div>
+                </div>
+            </div>
+       </div>
+       <div class="outline-dashed outline-1 border-slate-500 w-full mt-5"></div>
+       <div class="page-head w-full flex justify-between mt-20">
+            <div class="left-contant">
+                <p class="font-extrabold text-2xl">OIA Corporate</p>
+            </div>
+            <div class="item3">
+                <select name="Querter" id="Querter" class="bg-teal-600 text-white p-1 px-2 rounded-xl">
+                    <option value="Filter by">Filter by</option>
+                    <option value="OIA">OIA</option>
+                    <option value="OMR">OMR</option>
+                </select>
+            </div>
+        </div>
+        <div class="total-contract flex justify-between">
+            <div class="total-contract-left-contant w-1/3 ">
+                <div class="total-value p-3 rounded-md shadow-myshadow shadow-slate-300 justify-between flex">
+                    <div class="spend">
+                        <p class=" text-md text-teal-600 m-0">Total Contracts</p>
+                        <div class="vailu-score flex w-full">
+                            <p class="m-0 text-xl font-semibold">250</p>
+                        </div>
+                    </div>
+                    <div class="value ml-5">
+                        <p class="text-md text-teal-600 m-0">Total Contracts Value</p>
+                        <div class="vailu-score flex w-full">
+                            <p class="m-0 text-xl font-semibold">750.55</p>
+                            <p class="text-md font-semibold text-slate-500 m-0 mt-1 pl-2">MIn</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="total-value p-3 rounded-md shadow-myshadow shadow-slate-300 justify-between mt-4 flex">
+                    <div class="spend">
+                        <p class=" text-md text-teal-600 m-0">Ring fencing</p>
+                        <div class="vailu-score flex w-full">
+                            <p class="m-0 text-xl font-semibold">5</p>
+                            <p class="m-0 pl-2 text-md mt-1 font-medium">(75.00 MIn)</p>
+                        </div>
+                    </div>
+                    <div class="value ml-5">
+                        <p class="text-md text-teal-600 m-0">Total Contracts Value</p>
+                        <div class="vailu-score flex w-full">
+                            <p class="m-0 text-xl font-semibold">750.55</p>
+                            <p class="m-0 pl-2 text-md mt-1 font-medium">(50.00 MIn)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="procurement-spend p-3 rounded-md shadow-myshadow shadow-slate-300 mt-4">
+                    <div class="procurement-spend-head flex">
+                        <p class="text-xl font-semibold ">Procurement Spand</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="mt-1 icon icon-tabler icon-tabler-exclamation-circle" width="24" height="24"  viewBox="0 0 24 24" stroke-width="1.5" stroke="#d2ba7a" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                            <path d="M12 9v4" />
+                            <path d="M12 16v.01" />
+                        </svg>
+                    </div>
+                    <div class="goods-made-in-oman m-0 mb-3">
+                        <p class="text-md m-0 text-teal-600">Goods Made in Oman</p>
+                        <div class="score flex justify-between">
+                            <div class="left-score flex w-full">
+                                <p class="text-xl m-0 font-semibold">265.07</p>
+                                <p class="text-md font-semibold text-slate-500 m-0 mt-1 pl-2">MIn</p>
+                            </div>
+                            <p class="text-xl m-0 font-semibold">82.55%</p>
+                        </div>
+                        <div class="lable w-full h-4 m-0 p-0 rounded-lg bg-slate-300">
+                            <div class="available-lable h-4 w-4/5 p-0 m-0 rounded-lg bg-yellow-950">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="goods-non-made-in-oman m-0 mb-3">
+                        <p class="text-md m-0 text-teal-600">Goods Non Made in Oman (NRS)</p>
+                        <div class="score flex justify-between">
+                            <div class="left-score flex w-full">
+                                <p class="text-xl m-0 font-semibold">41.63</p>
+                                <p class="text-md font-semibold text-slate-500 m-0 mt-1 pl-2">MIn</p>
+                            </div>
+                            <p class="text-xl m-0 font-semibold">39.10%</p>
+                        </div>
+                        <div class="lable w-full h-4 m-0 p-0 rounded-lg bg-slate-300">
+                            <div class="available-lable h-4 w-2/5 p-0 m-0 rounded-lg bg-yellow-700">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="goods-non-made-in-oman m-0 mb-3">
+                        <p class="text-md m-0 text-teal-600">Goods Non Made in Oman (FRS)</p>
+                        <div class="score flex justify-between">
+                            <div class="left-score flex w-full">
+                                <p class="text-xl m-0 font-semibold">52.49</p>
+                                <p class="text-md font-semibold text-slate-500 m-0 mt-1 pl-2">MIn</p>
+                            </div>
+                            <p class="text-xl m-0 font-semibold">48.70%</p>
+                        </div>
+                        <div class="lable w-full h-4 m-0 p-0 rounded-lg bg-slate-300">
+                            <div class="available-lable h-4 w-1/2 p-0 m-0 rounded-lg bg-orange-300">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="goods-made-in-oman m-0 mb-3">
+                        <p class="text-md m-0 text-teal-600">Services NRS</p>
+                        <div class="score flex justify-between">
+                            <div class="left-score flex w-full">
+                                <p class="text-xl m-0 font-semibold">52.18</p>
+                                <p class="text-md font-semibold text-slate-500 m-0 mt-1 pl-2">MIn</p>
+                            </div>
+                            <p class="text-xl m-0 font-semibold">50.50%</p>
+                        </div>
+                        <div class="lable w-full h-4 m-0 p-0 rounded-lg bg-slate-300">
+                            <div class="available-lable h-4 w-1/2 p-0 m-0 rounded-lg bg-slate-700">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="goods-made-in-oman m-0 mb-3">
+                        <p class="text-md m-0 text-teal-600">Services FRS</p>
+                        <div class="score flex justify-between">
+                            <div class="left-score flex w-full">
+                                <p class="text-xl m-0 font-semibold">56.63</p>
+                                <p class="text-md font-semibold text-slate-500 m-0 mt-1 pl-2">MIn</p>
+                            </div>
+                            <p class="text-xl m-0 font-semibold">28.57%</p>
+                        </div>
+                        <div class="lable w-full h-4 m-0 p-0 rounded-lg bg-slate-300">
+                            <div class="available-lable h-4 w-1/3 p-0 m-0 rounded-lg bg-slate-950">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quisquam illo laudantium accusantium aut maxime laboriosam voluptatum ex pariatur sit exercitationem doloribus excepturi aperiam voluptate esse voluptatibus saepe labore, reprehenderit laborum. Debitis distinctio modi corporis accusantium, ipsa itaque quisquam illo amet quas! Voluptatem, voluptate ipsam ea aliquid doloremque quaerat voluptates praesentium excepturi quasi eius officia, provident illum ipsum! Modi molestiae dignissimos odio minus vitae illo delectus eaque eligendi, tempore, placeat perferendis excepturi sed assumenda? Sequi ea magnam deleniti expedita, corrupti eos reprehenderit et impedit commodi rem placeat quaerat, minima nisi molestiae quisquam alias maiores quae accusantium quia ad! Praesentium et non corporis veritatis voluptas, autem quae illum, ad itaque incidunt iure perferendis natus velit eaque id. Quia quo repudiandae, quasi odit delectus ratione aliquid perferendis ea voluptatem earum qui laudantium soluta illum quisquam? Laudantium impedit minima adipisci soluta a fuga voluptatem earum. Obcaecati aperiam maiores debitis minima corporis blanditiis incidunt laudantium? Nesciunt voluptatem a excepturi soluta est, distinctio ea doloribus illo id aliquam cupiditate iste. Corporis natus adipisci dolore odit rerum ipsum esse eum voluptatibus deleniti voluptate. Saepe alias iusto minus labore, blanditiis ab deserunt mollitia consequuntur quia, at reprehenderit! Corrupti, dignissimos quia id perspiciatis velit alias nisi itaque sapiente exercitationem iusto tempore aspernatur, animi quibusdam ratione autem! Vitae dolor eum magnam! Magnam, minima. Quam minus sequi ipsam velit quae blanditiis est sapiente similique aperiam eum tempora, tempore nemo in odit vel veritatis inventore illo quaerat officia, quo laboriosam iusto quidem alias. Cumque sequi minima necessitatibus ratione accusamus excepturi, vel rerum. Eligendi sint a nam mollitia aliquid obcaecati odit doloremque blanditiis. Quia beatae labore necessitatibus voluptatum inventore, quisquam dolorum non eos, deleniti nobis nostrum esse est sit distinctio assumenda. Voluptatum quos quas laudantium totam fuga repudiandae eum maiores consequatur quasi? Commodi aliquam sed corporis accusantium possimus, ad eveniet ullam quam placeat sint quia ex quae necessitatibus odio architecto, illum ipsam, fugit facilis dolor tempora. Quaerat minima laudantium laboriosam maxime ut quasi eos unde eveniet ipsum delectus nostrum provident aut repellat quam omnis molestias, harum, voluptatem eaque nisi tenetur eligendi. Aperiam iste nulla delectus enim blanditiis repellendus, ad mollitia repudiandae quas, ullam fuga consequatur doloremque odio provident facilis ipsa, amet pariatur magni tempora officiis? Rerum sapiente perferendis, incidunt voluptatum debitis autem, nostrum mollitia consectetur dolores vel dolore ipsam ratione officia expedita consequatur illum corporis dicta? Pariatur consectetur distinctio deleniti veritatis eum sequi cupiditate officiis, laborum saepe modi molestias aliquid error quasi sit, ad ex adipisci ut dolorem dolorum eligendi. Magni consequatur aliquam alias, reprehenderit culpa inventore consequuntur quisquam similique sit natus vero itaque. Possimus magnam mollitia, illo, cupiditate voluptatibus ad facilis labore autem odio aliquam, perferendis sapiente! Excepturi rerum cumque quis laudantium non vero neque illum nulla, quia quod voluptas dolorum nam iusto nemo iste sed doloremque ipsam natus, magnam modi libero dolor blanditiis sit! Itaque, rerum molestias ipsam qui, mollitia facere recusandae eum nam, quaerat est commodi vero ipsum consectetur corporis aperiam repellat aspernatur incidunt iusto natus illo. Quaerat distinctio modi dicta praesentium excepturi necessitatibus eos reiciendis rerum suscipit amet.</p>
+            </div>
+            <div class="total-contract-right w-8/12 ml-4">
+                <div class="other-spands justify-between flex">
+                    <div class="rdi-btm justify-around shadow-myshadow shadow-slate-300 p-3 rounded-md flex w-2/5">
+                        <div class="spend">
+                            <p class=" text-md text-teal-600 m-0">RDI</p>
+                            <div class="vailu-score flex w-full">
+                                <p class="m-0 text-xl font-semibold">0</p>
+                            </div>
+                        </div>
+                        <div class="value ml-5">
+                            <p class="text-md text-teal-600 m-0">BTM</p>
+                            <div class="vailu-score flex w-full">
+                                <p class="m-0 text-xl font-semibold">1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rdi-btm justify-between shadow-myshadow shadow-slate-300 p-3 rounded-md flex w-2/5 ml-3">
+                        <div class="social-invastment-spend">
+                            <p class=" text-md text-teal-600 m-0">Social Invastment Spend</p>
+                            <div class="vailu-score flex w-full">
+                                <p class="m-0 text-xl font-semibold">50.12</p>
+                                <p class="text-md font-semibold text-slate-500 m-0 mt-1 pl-2">MIn</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rdi-btm justify-between shadow-myshadow shadow-slate-300 p-3 rounded-md w-1/5 flex ml-3">
+                        <div class="social-invastment-spend">
+                            <p class=" text-md text-teal-600 m-0">Omanization(%)</p>
+                            <div class="vailu-score flex w-full">
+                                <p class="m-0 text-xl font-semibold">45%</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="m-0 mt-1 pl-1 icon icon-tabler icon-tabler-arrow-big-down" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff4500" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M15 4v8h3.586a1 1 0 0 1 .707 1.707l-6.586 6.586a1 1 0 0 1 -1.414 0l-6.586 -6.586a1 1 0 0 1 .707 -1.707h3.586v-8a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="other-spand-lable justify-between flex mt-4">
+                    <div class="other-spand-static p-3 w-lableWidth rounded-md shadow-myshadow shadow-slate-300">
+                        <div class="top-head flex justify-between">
+                            <div class="other-spend-static flex">
+                                <p class="text-xl font-semibold ">Other Spand Static</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mt-1 ml-1 icon icon-tabler icon-tabler-exclamation-circle" width="24" height="24"  viewBox="0 0 24 24" stroke-width="1.5" stroke="#d2ba7a" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                                    <path d="M12 9v4" />
+                                    <path d="M12 16v.01" />
+                                </svg>
+                            </div>
+                            <p class="m-0 text-md text-buttur">View Analytics</p>
+                        </div>
+                        <div class="chart1">
+                            <div>
+                                <canvasjs-chart [options]="chartOptions" [styles]="{width: '100%', height:'220px'}"></canvasjs-chart>    
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="other-spand-static p-3 w-2/5 rounded-md shadow-myshadow shadow-slate-300 ml-3">
+                        <div class="top-head flex justify-between">
+                            <div class="other-spend-static flex">
+                                <p class="text-xl font-semibold ">SME & Riyada Spend</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mt-1 ml-1 icon icon-tabler icon-tabler-exclamation-circle" width="24" height="24"  viewBox="0 0 24 24" stroke-width="1.5" stroke="#d2ba7a" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                                    <path d="M12 9v4" />
+                                    <path d="M12 16v.01" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="chart1">
+                            <div>
+                                <canvasjs-chart [options]="mychartOptions" [styles]="{width: '100%', height:'220px'}"></canvasjs-chart>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="icv-porformance w-full rounded-md shadow-myshadow shadow-slate-300 mt-3">
+                    <div class="top-head flex justify-between shadow-bottomShadow shadow-slate-300 p-3">
+                        <div class="other-spend-static flex">
+                            <p class="m-0 text-xl font-semibold ">ICV Porformance</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="mt-1 ml-1 icon icon-tabler icon-tabler-exclamation-circle" width="24" height="24"  viewBox="0 0 24 24" stroke-width="1.5" stroke="#d2ba7a" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                                <path d="M12 9v4" />
+                                <path d="M12 16v.01" />
+                            </svg>
+                        </div>
+                        <p class="m-0 text-md text-teal-600">Retainde values in %</p>
+                    </div>
+                    <div class="goods-services flex">
+                        <div class="goods p-3 w-1/2 shadow-rightbottomShadow shadow-slate-300">
+                            <div class="goods-head flex justify-between mb-2">
+                                <div class="head-left flex">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-table" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#009988" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                        <path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14z" />
+                                        <path d="M3 10h18" />
+                                        <path d="M10 3v18" />
+                                      </svg>
+                                      <p class="m-0 text-xl font-semibold pl-3">Goods</p>
+                                </div>
+                                <p class="px-2 py-1 m-0 bg-teal-600 text-white text-lg rounded-md">90%</p>
+                            </div>
+                            <div class="goods-contant flex justify-between w-4/5">
+                                <div class="spend">
+                                    <p class=" text-md text-teal-600 m-0">Total Spend</p>
+                                    <div class="vailu-score flex w-full">
+                                        <p class="m-0 text-xl font-semibold">50,000,000</p>
+                                    </div>
+                                </div>
+                                <div class="value ml-5">
+                                    <p class="text-md text-teal-600 m-0">Retained Value/p>
+                                    <div class="vailu-score flex w-full">
+                                        <p class="m-0 text-xl font-semibold">45,000,000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="goods w-1/2 p-3">
+                            <div class="goods-head flex justify-between mb-2">
+                                <div class="head-left flex">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-settings-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#009988" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                        <path d="M11.646 20.965a1.67 1.67 0 0 1 -1.321 -1.282a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c.728 .177 1.154 .71 1.279 1.303" />
+                                        <path d="M14.985 11.694a3 3 0 1 0 -3.29 3.29" />
+                                        <path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                                        <path d="M20.2 20.2l1.8 1.8" />
+                                      </svg>
+                                      <p class="m-0 text-xl font-semibold pl-3">Services</p>
+                                </div>
+                                <p class="px-2 py-1 m-0 bg-teal-600 text-white text-lg rounded-md">56%</p>
+                            </div>
+                            <div class="goods-contant flex justify-between w-4/5">
+                                <div class="spend">
+                                    <p class=" text-md text-teal-600 m-0">Total Spend</p>
+                                    <div class="vailu-score flex w-full">
+                                        <p class="m-0 text-xl font-semibold">45,500,000</p>
+                                    </div>
+                                </div>
+                                <div class="value ml-5">
+                                    <p class="text-md text-teal-600 m-0">Retained Value</p>
+                                    <div class="vailu-score flex w-full">
+                                        <p class="m-0 text-xl font-semibold">25,500,000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="workforce-investment flex">
+                        <div class="workforce p-3 w-1/2">
+                            <div class="goods-head flex justify-between mb-2">
+                                <div class="head-left flex">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users-group" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#009988" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                        <path d="M10 13a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                                        <path d="M8 21v-1a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v1" />
+                                        <path d="M15 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                                        <path d="M17 10h2a2 2 0 0 1 2 2v1" />
+                                        <path d="M5 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                                        <path d="M3 13v-1a2 2 0 0 1 2 -2h2" />
+                                      </svg>
+                                      <p class="m-0 text-xl font-semibold pl-3">workforce</p>
+                                </div>
+                                <p class="px-2 py-1 m-0 bg-teal-600 text-white text-lg rounded-md">55%</p>
+                            </div>
+                            <div class="goods-contant flex justify-between w-4/5">
+                                <div class="spend">
+                                    <p class=" text-md text-teal-600 m-0">Total Spend</p>
+                                    <div class="vailu-score flex w-full">
+                                        <p class="m-0 text-xl font-semibold">65,000,000</p>
+                                    </div>
+                                </div>
+                                <div class="value ml-5">
+                                    <p class="text-md text-teal-600 m-0">Retained Value</p>
+                                    <div class="vailu-score flex w-full">
+                                        <p class="m-0 text-xl font-semibold">35,800,000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="investment w-1/2 p-3 shadow-lefttopShadow shadow-slate-300">
+                            <div class="goods-head flex justify-between mb-2">
+                                <div class="head-left flex">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-moneybag" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#009988" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                        <path d="M9.5 3h5a1.5 1.5 0 0 1 1.5 1.5a3.5 3.5 0 0 1 -3.5 3.5h-1a3.5 3.5 0 0 1 -3.5 -3.5a1.5 1.5 0 0 1 1.5 -1.5z" />
+                                        <path d="M4 17v-1a8 8 0 1 1 16 0v1a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+                                      </svg>
+                                      <p class="m-0 text-xl font-semibold pl-3">Investment</p>
+                                </div>
+                                <p class="px-2 py-1 m-0 bg-teal-600 text-white text-lg rounded-md">40%</p>
+                            </div>
+                            <div class="goods-contant flex justify-between w-4/5">
+                                <div class="spend">
+                                    <p class=" text-md text-teal-600 m-0">Total Spend</p>
+                                    <div class="vailu-score flex w-full">
+                                        <p class="m-0 text-xl font-semibold">15,200,000</p>
+                                    </div>
+                                </div>
+                                <div class="value ml-5">
+                                    <p class="text-md text-teal-600 m-0">Retained Value</p>
+                                    <div class="vailu-score flex w-full">
+                                        <p class="m-0 text-xl font-semibold">6,200,000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </mat-sidenav-container>
