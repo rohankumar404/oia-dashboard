@@ -12,7 +12,7 @@ module.exports = {
         minwidth: "30%",
       },
       height: {
-        myheight: "496px",
+        myheight: "453px",
       },
       boxShadow: {
         myshadow: "0px 0px 4px 0px",
